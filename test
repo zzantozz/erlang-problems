@@ -1,0 +1,6 @@
+#!/bin/bash
+set -ex
+mkdir -p ebin
+erlc -o ebin src/*.erl
+erlc -o tests tests/*.erl
+erl -pa ebin -pa tests -noshell -s test_runner

@@ -1,0 +1,4 @@
+#!/bin/bash
+set -ex
+rm -rf ebin
+rm -f tests/*.beam
