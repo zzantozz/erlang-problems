@@ -1,7 +1,7 @@
 -module(test_runner).
 -export([start/0]).
 
-modules() -> [].
+modules() -> [json].
 
 start() ->
   eunit:test(modules(), [verbose]),
